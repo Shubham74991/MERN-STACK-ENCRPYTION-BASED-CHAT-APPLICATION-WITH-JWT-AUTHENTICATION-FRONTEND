@@ -1,4 +1,4 @@
-export const host = 'http://localhost:5000'
+export const host = 'https://backendd-f7n0.onrender.com/'
 
 export const registerApi = `${host}/api/register`;
 export const loginApi = `${host}/api/login`;

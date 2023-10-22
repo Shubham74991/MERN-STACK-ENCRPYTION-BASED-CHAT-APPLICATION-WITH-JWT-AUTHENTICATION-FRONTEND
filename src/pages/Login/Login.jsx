@@ -85,6 +85,16 @@ const Login = () => {
             }
             catch(err){
                 if(err.response.status === 400){
+                    const toastOptions = {  
+                        position: "top-right",
+                        autoClose: 5000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        theme: "dark",
+                    }
                     toast.error(err.response.data.error, toastOptions);
                 }
             }
